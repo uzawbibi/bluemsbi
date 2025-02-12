@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TV8GJJR');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <div class="logo-container">
+        <a href="index.html"><img src="img/logo.png" alt="Logo Moonflower" class="logo"></a>
+    </div>
+    <header>
+        <nav class="navbar">
+            <div class="cart-icon">
+                <a href="carrinho.html"><img src="https://static.giulianaflores.com.br/images/site/icon_cart.png" alt="Sacola de compras" class="cart-icon" ></a>
+            </div>
+        </nav>   
+    
+    <main>
+        <section class="product-carousel">
+            <button class="prev">&#10094;</button>
+            <div class="products">
+                <div class="product-card" onclick="openPopup('Buquê Éden Celeste', 'O Buquê Éden Celeste é uma combinação harmoniosa de flores delicadas e cores suaves, inspiradas na serenidade de um jardim celestial. Com tons etéreos e fragrâncias suaves, ele transmite paz, encanto e um toque de magia, perfeito para momentos especiais ou para iluminar qualquer ambiente. ✨💐');dlViewItem('1', 250, 'Buquê Éden Celeste')">
+                    <img src="https://s2.glbimg.com/sR9jOTXVGpgjY0khapqqa4DAcZU=/e.glbimg.com/og/ed/f/original/2022/05/19/arranjo-buque-tropical-noivas.jpg" alt="Produto 1">
+                    <h5>Buquê Éden Celeste</h5>
+                    <p>R$ 250,00</p>
+                    <a href="carrinho.html">
+                        <button class="add-to-cart">Adicionar ao Carrinho</button></a>
+                </div>
+                <div class="product-card" onclick="openPopup('Buquê Encanto Lunar', 'O Buquê Encanto Lunar captura a beleza misteriosa da lua em uma seleção encantadora de flores. Com tons suaves e brilhos sutis, ele evoca a serenidade das noites estreladas e o romantismo dos jardins ao luar. Ideal para presentear quem ilumina sua vida com delicadeza e encanto. ✨🌙💐');dlViewItem('1', 250, 'Buquê Éden Celeste')">
+                    <img src="https://cdn.awsli.com.br/1944/1944679/produto/162674575/7cfa0a65-f5ff-46af-b548-5b6d76192263-df2741d3d4.jpg" alt="Produto 2">
+                    <h5>Buquê Encanto Lunar</h5>
+                    <p>R$ 250,00</p>
+                    <a href="carrinho.html">
+                        <button class="add-to-cart">Adicionar ao Carrinho</button></a>
+                </div>
+                <div class="product-card" onclick="openPopup('Buquê Rosaluna Encantada', 'O Buquê Encanto Lunar captura a beleza misteriosa da lua em uma seleção encantadora de flores. Com tons suaves e brilhos sutis, ele evoca a serenidade das noites estreladas e o romantismo dos jardins ao luar. Ideal para presentear quem ilumina sua vida com delicadeza e encanto. ✨🌙💐');dlViewItem('1', 250, 'Buquê Éden Celeste')">
+                    <img src="https://realfloresatelie.com.br/wp-content/uploads/2021/03/buque-de-rosas-pink.jpg" alt="Produto 3">
+                    <h5>Buquê Rosaluna Encantada</h5>
+                    <p>R$ 250,00</p>
+                    <a href="carrinho.html">
+                        <button class="add-to-cart">Adicionar ao Carrinho</button></a>
+                </div>
+                <div class="product-card" onclick="openPopup('Buquê Jardim Secreto', 'O Buquê Jardim Secreto é um convite para um mundo de encanto e mistério, onde flores exuberantes se entrelaçam em uma composição romântica e delicada. Com cores suaves e fragrâncias envolventes, ele traz a magia dos jardins escondidos, despertando sentimentos de paz e fascínio. 🌿🌸✨');dlViewItem('1', 250, 'Buquê Éden Celeste')">
+                    <img src="https://flordacidade.com/site/wp-content/uploads/2018/04/IMG_20220923_151515956_HDR-fotor-2023062894433.jpg" alt="Produto 4">
+                    <h5>Buquê Jardim Secreto</h5>
+                    <p>R$ 250,00</p>
+                    <a href="carrinho.html">
+                    <button class="add-to-cart">Adicionar ao Carrinho</button></a>
+                </div>
+            </div>
+            <button class="next">&#10095;</button>
+        </section>
+    </main>
+    
+    <div id="product-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h4 id="popup-title"></h4>
+            <p id="popup-description"></p>
+        </div>
+    </div>
+    
+    <script>
+        function openPopup(title, description) {
+            document.getElementById('popup-title').innerText = title;
+            document.getElementById('popup-description').innerText = description;
+            document.getElementById('product-popup').style.display = 'block';
+        }
+        
+        function closePopup() {
+            document.getElementById('product-popup').style.display = 'none';
+        }
+
+        window.dataLayer = window.dataLayer || [];
+        function dlViewItem(pId, price, name) {
+            window.dataLayer.push({
+            event: 'view_item',
+            pId: pId,
+            price: price,
+            name: name
+            });
+        }
+    </script>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV8GJJR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+</html>

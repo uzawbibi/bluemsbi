@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento Concluído</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TV8GJJR');</script>
+    <!-- End Google Tag Manager -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+        .logo-container {
+    text-align: center;
+    margin: 0;
+    padding: 20px; /* Ajuste conforme necessário */
+    background-color: #93A490;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Garante que o container ocupa toda a largura disponível */
+    height: 100px; /* Ajuste a altura conforme necessário */
+}
+
+.logo-container img {
+    max-width: 100%; /* Garante que a imagem acompanha o tamanho do container */
+    max-height: 100px; /* Ajusta a altura da imagem para se adaptar ao container */
+    height: auto;
+    width: auto;
+}
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 5px;
+            background-color:#F0DFC2;
+            margin-bottom: 20px;
+        }
+        .success-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            margin: auto;
+        }
+        .success-message {
+            font-size: 18px;
+            color: #4CAF50;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .order-details {
+            font-size: 16px;
+            color: #333;
+        }
+        .back-home {
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #008CBA;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-home:hover {
+            background-color: #007bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="img/logo.png" alt="Logo Moonflower">
+    </div>
+    <header>
+        <nav class="navbar"></nav>   
+    </header>
+    <div class="success-container">
+        <p class="success-message">Pagamento Concluído com Sucesso!</p>
+        <p class="order-details">Número do Pedido: <strong>#123456</strong></p>
+        <p class="order-details">Valor Total: <strong>R$ 250,00</strong></p>
+        <a href="index.html" class="back-home">Voltar para a Loja</a>
+    </div>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV8GJJR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+</html>
